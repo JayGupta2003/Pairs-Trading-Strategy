@@ -14,11 +14,8 @@ config.py
 
 # --- Data & Artifacts ---
 # We ignore these so users must run the code to generate them
-data/
-reports/
 *.csv
 *.png
-*.pdf
 *.xlsx
 
 # --- IDE Settings ---
