@@ -1,0 +1,30 @@
+# --- Python Internals ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- Virtual Environments ---
+venv/
+env/
+.env
+
+# --- Configuration & Secrets (CRITICAL) ---
+# Never commit your API keys!
+config.py
+
+# --- Data & Artifacts ---
+# We ignore these so users must run the code to generate them
+data/
+reports/
+*.csv
+*.png
+*.pdf
+*.xlsx
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
