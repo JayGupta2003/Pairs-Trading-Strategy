@@ -96,6 +96,18 @@ Pairs-Trading-Strategy/
 
     - If active signals are found, a PDF report will be generated in `reports/`.
 
+## Results (research run, 2020-01-01 to 2025-12-04)
+
+| Metric | Value |
+| --- | --- |
+| Sector ETF holdings screened | 11 sectors, 388 unique symbols in the signal scan |
+| Cointegrated pairs found (Engle-Granger, p < 0.05) | **968** |
+| Active signals on 2025-12-03 (\|Z\| > 2) | **120** |
+
+The daily screener calibrates on the saved `data/best_pairs.csv` and flags pairs whose spread Z-score is beyond +/-2.
+
+**Reading the numbers honestly:** cointegration screening is deliberately permissive, so many pairs pass the test. In the sample brief (`reports/Daily_Brief_2025-12-03.pdf`) the per-pair trailing 1-year Sharpe ratios are mixed, with many negative, so a pair passing the cointegration test does not by itself mean it is profitable. Treat the screener as a research tool, not a trading system, until costs, out-of-sample validation and pair-level filtering are added.
+
 ## Sample Output (PDF Report)
 
 The automated `Daily_Brief.pdf` includes:
